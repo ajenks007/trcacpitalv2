@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - TRC Capital Partners</title>
+  <meta name="description" content="TRC Capital Partners active portfolio across Texas including 1001 McKinney, Regions Financial Center, Galaxy, Lockwood, Campanile South, and Fernweh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .asset {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--ivory-dark);
+    }
+    .asset:last-child { border-bottom: none; }
+    .asset.reverse { direction: rtl; }
+    .asset.reverse > * { direction: ltr; }
+    .asset-img {
+      width: 100%; height: 400px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .asset-type {
+      font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--brass); margin-bottom: 0.8rem; display: block;
+    }
+    .asset h2 { font-size: 2.4rem; margin-bottom: 0.5rem; }
+    .asset-location {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text-light);
+      display: block; margin-bottom: 1.2rem;
+    }
+    .asset p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .asset-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      background: var(--ivory-mid); padding: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+    .asset-stat-num {
+      display: block; font-family: var(--font-display);
+      font-size: 1.7rem; font-weight: 300; color: var(--charcoal); line-height: 1;
+    }
+    .asset-stat-label {
+      font-size: 0.58rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--text-light); margin-top: 0.3rem; display: block;
+    }
+    .prev-section { background: var(--ivory-mid); padding: 5rem 0; }
+    @media (max-width: 900px) {
+      .asset { grid-template-columns: 1fr; gap: 2.5rem; }
+      .asset.reverse { direction: ltr; }
+      .asset-img { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="trc-logo.webp" alt="TRC Capital Partners">
+  </a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="team.html">Team</a>
+    <a href="why-texas.html">Why Texas</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">x</button>
+  <a href="about.html">About</a><a href="portfolio.html">Portfolio</a>
+  <a href="team.html">Team</a><a href="why-texas.html">Why Texas</a>
+  <a href="insights.html">Insights</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('mckinney.jpg'); background-position:center top;"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Our Portfolio</h1>
+    <p>A diversified collection of Texas real estate assets across office, mixed-use, hospitality, and residential.</p>
+  </div>
+</section>
+
+<!-- CURRENT PORTFOLIO -->
+<section class="section white">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">Active Assets</span>
+      <h2>Current Portfolio</h2>
+      <span class="rule"></span>
+    </div>
+
+    <!-- 1001 McKINNEY -->
+    <div class="asset">
+      <img class="asset-img" src="mckinney.jpg" alt="1001 McKinney, Houston" style="object-position:center top;">
+      <div>
+        <span class="asset-type">Class A Office, Houston CBD</span>
+        <h2>1001 McKinney</h2>
+        <span class="asset-location">Houston, TX</span>
+        <p>TRC Capital Partners owns and manages the 23-story, 375,440-square-foot building at Main and McKinney in the Houston CBD. The Art Deco style building was designed by Alfred C. Finn and built in 1947 to house City National Bank. In 2020, TRC completed a historic renovation of the main lobby, upper floor lobbies and bathrooms, and modernized all elevators. Key amenities include a tenant lounge, fitness center, conference facility, tunnel access, and attached parking garage.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">375K</span><span class="asset-stat-label">Sq Ft</span></div>
+          <div><span class="asset-stat-num">23</span><span class="asset-stat-label">Floors</span></div>
+          <div><span class="asset-stat-num">1947</span><span class="asset-stat-label">Year Built</span></div>
+        </div>
+        <div class="btn-row">
+          <a href="http://1001mckinney.com" target="_blank" class="btn btn-brass">Visit Website</a>
+          <a href="contact.html" class="btn btn-outline">Leasing Inquiries</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGIONS FINANCIAL CENTER -->
+    <div class="asset reverse">
+      <img class="asset-img" src="regions.jpg" alt="Regions Financial Center, Houston">
+      <div>
+        <span class="asset-type">Office and Retail, Greenway Plaza</span>
+        <h2>Regions Financial Center</h2>
+        <span class="asset-location">Houston, TX</span>
+        <p>TRC Capital Partners, along with Hansen Partners and Barbour Investments, developed, leases, and manages Regions Financial Center, an 11-story, 180,000-square-foot office and retail building located in the Greenway Plaza area of Houston's inner loop. The property uniquely integrates boutique office space and upscale retail space with direct frontage on Richmond Avenue.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">180K</span><span class="asset-stat-label">Sq Ft</span></div>
+          <div><span class="asset-stat-num">11</span><span class="asset-stat-label">Floors</span></div>
+          <div><span class="asset-stat-num">Mixed</span><span class="asset-stat-label">Use</span></div>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Leasing Inquiries</a>
+      </div>
+    </div>
+
+    <!-- GALAXY -->
+    <div class="asset">
+      <img class="asset-img" src="galaxy.jpg" alt="Galaxy, Houston">
+      <div>
+        <span class="asset-type">Class A Office</span>
+        <h2>Galaxy</h2>
+        <span class="asset-location">Houston, TX</span>
+        <p>Galaxy is a modern Class A office asset in Houston's inner loop, offering flexible workspace and premium amenities in a prime location. TRC Capital Partners owns and manages the property, providing tenants with the hands-on service and quality environment TRC is known for across its portfolio.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">Class</span><span class="asset-stat-label">A Office</span></div>
+          <div><span class="asset-stat-num">Houston</span><span class="asset-stat-label">Inner Loop</span></div>
+          <div><span class="asset-stat-num">TRC</span><span class="asset-stat-label">Managed</span></div>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Leasing Inquiries</a>
+      </div>
+    </div>
+
+    <!-- LOCKWOOD -->
+    <div class="asset reverse">
+      <img class="asset-img" src="lockwood.jpg" alt="Lockwood, Houston">
+      <div>
+        <span class="asset-type">Office</span>
+        <h2>Lockwood</h2>
+        <span class="asset-location">Houston, TX</span>
+        <p>Lockwood is a distinctive office asset in Houston managed by TRC Capital Partners. The property offers flexible office solutions in a well-located Houston submarket, continuing TRC's strategy of acquiring and actively managing quality assets that serve the needs of Houston's growing business community.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">Office</span><span class="asset-stat-label">Asset Type</span></div>
+          <div><span class="asset-stat-num">Houston</span><span class="asset-stat-label">Texas</span></div>
+          <div><span class="asset-stat-num">TRC</span><span class="asset-stat-label">Managed</span></div>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Leasing Inquiries</a>
+      </div>
+    </div>
+
+    <!-- CAMPANILE SOUTH -->
+    <div class="asset">
+      <img class="asset-img" src="campanile.png" alt="Campanile South, Houston">
+      <div>
+        <span class="asset-type">Boutique Office</span>
+        <h2>Campanile South</h2>
+        <span class="asset-location">Houston, TX</span>
+        <p>TRC Capital Partners, along with Hansen Partners and Barbour Investments, developed, leases, and manages Campanile South, an 80,000-square-foot boutique office building with office and retail space catering specifically to the small tenant market. Located at 4306 Yoakum, the property is a standout example of thoughtfully designed boutique office space in Houston.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">80K</span><span class="asset-stat-label">Sq Ft</span></div>
+          <div><span class="asset-stat-num">Boutique</span><span class="asset-stat-label">Office</span></div>
+          <div><span class="asset-stat-num">Retail</span><span class="asset-stat-label">Ground Floor</span></div>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Leasing Inquiries</a>
+      </div>
+    </div>
+
+    <!-- FERNWEH -->
+    <div class="asset reverse">
+      <img class="asset-img" src="fernweh.jpg" alt="Fernweh, New Braunfels" style="object-position:center 30%;">
+      <div>
+        <span class="asset-type">Boutique Hospitality, Texas Hill Country</span>
+        <h2>Fernweh</h2>
+        <span class="asset-location">New Braunfels, TX</span>
+        <p>Fernweh is a newly developed boutique hospitality property located on approximately six acres along the Guadalupe River in New Braunfels, Texas. The project consists of 21 short-term rental cottages with modern interior finishes and guest accommodations, supported by resort-style amenities including a pool, hot tub, sports courts, and river access.</p>
+        <div class="asset-stats">
+          <div><span class="asset-stat-num">21</span><span class="asset-stat-label">Cottages</span></div>
+          <div><span class="asset-stat-num">6</span><span class="asset-stat-label">Acres</span></div>
+          <div><span class="asset-stat-num">STR</span><span class="asset-stat-label">Hospitality</span></div>
+        </div>
+        <div class="btn-row">
+          <a href="https://www.stayfernweh.com" target="_blank" class="btn btn-brass">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PREVIOUS PROJECTS -->
+<div class="prev-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="overline">Track Record</span>
+      <h2>Previous Projects and Investments</h2>
+      <span class="rule"></span>
+      <p style="max-width:620px;">TRC has a long history of successful real estate investments across Texas, spanning office, hospitality, and mixed-use asset classes.</p>
+    </div>
+    <div class="prev-grid">
+      <div class="prev-card reveal"><h4>BBVA Compass Plaza</h4><span>Houston, TX</span></div>
+      <div class="prev-card reveal"><h4>InterContinental Houston Medical Center</h4><span>Houston, TX &mdash; 354 rooms, opened 2019. First full-service luxury hotel near Texas Medical Center in 25+ years.</span></div>
+      <div class="prev-card reveal"><h4>Houstonian Hotel, Club and Spa</h4><span>Houston, TX</span></div>
+      <div class="prev-card reveal"><h4>Hyatt Regency Town Lake</h4><span>Austin, TX</span></div>
+      <div class="prev-card reveal"><h4>Hilton Dallas/Rockwall</h4><span>Rockwall, TX</span></div>
+      <div class="prev-card reveal"><h4>Hilton Westchase</h4><span>Houston, TX</span></div>
+      <div class="prev-card reveal"><h4>The Redstone Building</h4><span>Houston, TX</span></div>
+      <div class="prev-card reveal"><h4>Hilton Bella Harbor</h4><span>Rockwall, TX</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="section slate" style="text-align:center;">
+  <div class="container" style="max-width:680px;">
+    <span class="overline" style="color:var(--brass-light);">Leasing</span>
+    <h2 style="color:var(--ivory);margin-bottom:1rem;">Looking for Office or Commercial Space?</h2>
+    <span class="rule centered" style="background:var(--brass);"></span>
+    <p style="color:rgba(247,244,239,0.65);margin-bottom:2rem;">TRC actively leases space across its portfolio of office and mixed-use properties in Houston. Contact our team to discuss availability and touring.</p>
+    <a href="contact.html" class="btn btn-brass">Contact Leasing Team</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="trc-logo.webp" alt="TRC Capital Partners">
+        <p>A privately held Texas real estate investment firm. Acquisitions. Development. Management.</p>
+      </div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About TRC</a><a href="team.html">Our Team</a><a href="why-texas.html">Why Texas</a><a href="insights.html">Insights</a></div>
+      <div class="footer-col"><h4>Portfolio</h4><a href="portfolio.html">1001 McKinney</a><a href="portfolio.html">Regions Financial Center</a><a href="portfolio.html">Galaxy</a><a href="portfolio.html">Lockwood</a><a href="portfolio.html">Campanile South</a><a href="portfolio.html">Fernweh</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="tel:7132661899">713.266.1899</a><a href="mailto:admin@trccapitalpartners.com">admin@trccapitalpartners.com</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>2025 TRC Capital Partners, LLC. All rights reserved.</span>
+      <span>Houston, Texas</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+  document.querySelectorAll('.prev-card,.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

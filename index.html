@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRC Capital Partners | Texas Real Estate Investment</title>
+  <meta name="description" content="TRC Capital Partners acquires, develops, and actively manages real estate assets across Texas with over $1.4 billion in aggregate investment value.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="trc-logo.webp" alt="TRC Capital Partners">
+  </a>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="team.html">Team</a>
+    <a href="why-texas.html">Why Texas</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">x</button>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="team.html">Team</a>
+  <a href="why-texas.html">Why Texas</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact</a>
+  
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background-image:url('mckinney.jpg');"></div>
+    <div class="hero-slide" style="background-image:url('regions.jpg');"></div>
+    <div class="hero-slide" style="background-image:url('fernweh.jpg'); background-position: center 30%;"></div>
+    <div class="hero-slide" style="background-image:url('galaxy.jpg');"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-accent-line"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>Houston, Texas -- Founded 1990</span>
+    </div>
+    <h1>
+      <span class="hero-line"><span class="hero-line-inner">We Don't Just</span></span>
+      <span class="hero-line"><span class="hero-line-inner" style="color:var(--brass-light);">Own Buildings.</span></span>
+      <span class="hero-line"><span class="hero-line-inner">We Build Places.</span></span>
+    </h1>
+    <p class="hero-sub">TRC Capital Partners acquires, develops, and actively manages real estate across Texas, with a relentless focus on the tenants, communities, and investors we serve.</p>
+    <div class="btn-row">
+      <a href="portfolio.html" class="btn btn-brass">View Portfolio</a>
+      <a href="about.html" class="btn btn-ghost">Our Approach</a>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots">
+    <div class="hero-dot active" onclick="goToSlide(0)"></div>
+    <div class="hero-dot" onclick="goToSlide(1)"></div>
+    <div class="hero-dot" onclick="goToSlide(2)"></div>
+    <div class="hero-dot" onclick="goToSlide(3)"></div>
+  </div>
+
+  <div class="hero-scroll">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>Acquisitions</span> 1001 McKinney, Houston &nbsp;&nbsp;
+    <span>Acquisitions</span> Regions Financial Center &nbsp;&nbsp;
+    <span>Development</span> InterContinental Houston Medical Center &nbsp;&nbsp;
+    <span>Hospitality</span> Fernweh, New Braunfels &nbsp;&nbsp;
+    <span>Office</span> Galaxy &nbsp;&nbsp;
+    <span>Office</span> Lockwood &nbsp;&nbsp;
+    <span>Founded</span> 1990 &nbsp;&nbsp;
+    <span>Aggregate Value</span> $1.4B+ &nbsp;&nbsp;
+    <span>Focus</span> Texas &nbsp;&nbsp;
+    <span>Acquisitions</span> 1001 McKinney, Houston &nbsp;&nbsp;
+    <span>Acquisitions</span> Regions Financial Center &nbsp;&nbsp;
+    <span>Development</span> InterContinental Houston Medical Center &nbsp;&nbsp;
+    <span>Hospitality</span> Fernweh, New Braunfels &nbsp;&nbsp;
+    <span>Office</span> Galaxy &nbsp;&nbsp;
+    <span>Office</span> Lockwood &nbsp;&nbsp;
+    <span>Founded</span> 1990 &nbsp;&nbsp;
+    <span>Aggregate Value</span> $1.4B+ &nbsp;&nbsp;
+    <span>Focus</span> Texas
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stat-block">
+        <span class="stat-num">$<span data-target="1400">0</span>M+</span>
+        <span class="stat-label">Aggregate Investment Value</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num"><span data-target="35">0</span>+</span>
+        <span class="stat-label">Years in Texas</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num"><span data-target="6">0</span></span>
+        <span class="stat-label">Active Assets Under Management</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num"><span data-target="75">0</span>+</span>
+        <span class="stat-label">Years Combined Team Experience</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section white">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <span class="overline">Who We Are</span>
+        <h2>A Privately Held Texas Real Estate Firm</h2>
+        <span class="rule"></span>
+        <p>TRC Capital Partners is a privately held firm that invests primarily in the Texas market. Founded in 1990 as The Redstone Companies, TRC has invested both private and institutional capital in real estate assets with an aggregate value of over $1.4 billion, spanning commercial office, mixed-use retail, hospitality, and residential development.</p>
+        <p>Our differentiator is not simply the deals we pursue. It is how we operate. We are actively involved in the buildings we own, the tenants we serve, and the communities we are part of. That hands-on commitment to management is what sets TRC apart.</p>
+        <div class="btn-row" style="margin-top:2rem;">
+          <a href="about.html" class="btn btn-outline">Learn More About TRC</a>
+          <a href="why-texas.html" class="btn btn-slate">Why Texas</a>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <img src="mckinney.jpg" alt="1001 McKinney, Houston" style="width:100%;height:520px;object-fit:cover;object-position:center top;">
+        <div style="position:absolute;bottom:-1.5rem;left:-1.5rem;background:var(--slate);padding:1.8rem 2rem;max-width:260px;border-left:2px solid var(--brass);">
+          <span style="display:block;font-family:var(--font-display);font-size:0.95rem;font-weight:400;color:var(--ivory);margin-bottom:0.3rem;line-height:1.3;">HBJ Landmark Award Finalist</span>
+          <span style="font-size:0.58rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--brass);">Historic Renovation Category</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section ivory-mid">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="overline">Our Strategy</span>
+      <h2>Acquisitions. Development. Management.</h2>
+      <span class="rule centered"></span>
+      <p style="max-width:580px;margin:0 auto;">TRC specializes in strong risk-adjusted return opportunities and adds value through active, hands-on asset and property management.</p>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <span class="approach-num">01</span>
+        <h3>Acquire</h3>
+        <p>We identify underperforming and undervalued real estate assets across Texas, acquiring them through a disciplined process built on 35 years of local market knowledge and institutional relationships.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-num">02</span>
+        <h3>Develop and Improve</h3>
+        <p>From historic renovations like 1001 McKinney to ground-up hospitality development like the InterContinental Houston, TRC applies capital and expertise to create institutional-quality assets.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-num">03</span>
+        <h3>Operate and Grow</h3>
+        <p>Active management is our differentiator. We control the tenant experience, manage operating costs, and optimize income while building real relationships with the people who occupy our buildings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO PREVIEW -->
+<section class="section ivory">
+  <div class="container">
+    <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <span class="overline">Active Assets</span>
+        <h2>Current Portfolio</h2>
+        <span class="rule"></span>
+      </div>
+      <a href="portfolio.html" class="btn btn-outline" style="margin-bottom:0.5rem;">View Full Portfolio</a>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-card-img" style="background-image:url('mckinney.jpg'); background-position:center top;"></div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-type">Class A Office, Houston CBD</span>
+          <h3>1001 McKinney</h3>
+          <span class="portfolio-card-loc">Houston, TX</span>
+          <p class="portfolio-card-desc">23-story, 375,440 sq ft historic Art Deco office tower. National Register of Historic Places. HBJ Landmark Award Finalist.</p>
+          <a href="http://1001mckinney.com" class="portfolio-card-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-card-img" style="background-image:url('regions.jpg');"></div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-type">Mixed-Use Office and Retail</span>
+          <h3>Regions Financial Center</h3>
+          <span class="portfolio-card-loc">Houston, TX</span>
+          <p class="portfolio-card-desc">11-story, 180,000 sq ft office and retail building in Greenway Plaza with direct frontage on Richmond Avenue.</p>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-card-img" style="background-image:url('fernweh.jpg'); background-position:center 30%;"></div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-type">Boutique Hospitality</span>
+          <h3>Fernweh</h3>
+          <span class="portfolio-card-loc">New Braunfels, TX</span>
+          <p class="portfolio-card-desc">21 short-term rental cottages on six acres along the Guadalupe River in the Texas Hill Country.</p>
+          <a href="https://www.stayfernweh.com" class="portfolio-card-link" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-band">
+  <div class="container">
+    <blockquote>"The buildings we own are not just investments. They are places where <strong>businesses grow, careers are built,</strong> and communities thrive."</blockquote>
+  </div>
+</div>
+
+<!-- TEAM PREVIEW -->
+<section class="section white">
+  <div class="container">
+    <div class="section-header" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <span class="overline">Leadership</span>
+        <h2>The Team</h2>
+        <span class="rule"></span>
+      </div>
+      <a href="team.html" class="btn btn-outline" style="margin-bottom:0.5rem;">Meet the Full Team</a>
+    </div>
+    <div class="team-grid-v2" style="max-width:860px;margin:2rem 0 0;">
+      <div class="team-card-v2">
+        <img class="team-headshot" src="steve-lerner.webp" alt="Steve Lerner, CEO of TRC Capital Partners" style="height:360px;object-fit:cover;object-position:center top;">
+        <h3>Steve Lerner</h3>
+        <span class="team-title-label">Chief Executive Officer</span>
+        <p class="team-bio" style="font-size:0.84rem;">CEO of TRC Capital Partners and TRC Ventures. UT Law honors graduate. Former partner at Schlanger Silver LLP. Chairman, Harris County Improvement District #1. Board, Veritex Holdings (NASDAQ: VBTX).</p>
+      </div>
+      <div class="team-card-v2">
+        <img class="team-headshot" src="kellie-jenks.webp" alt="Kellie Jenks, President of TRC Capital Partners" style="height:360px;object-fit:cover;object-position:center top;">
+        <h3>Kellie Jenks</h3>
+        <span class="team-title-label">President</span>
+        <p class="team-bio" style="font-size:0.84rem;">Leads strategy across investment, development, and property management. Former VP Rockspring Capital, Investment Manager Lionstone Group ($400M portfolio), Goldman Sachs Whitehall Funds ($1.2B hotel platform). MBA, Columbia Business School.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO SPLIT -->
+<div class="photo-split">
+  <div class="photo-split-img" style="background-image:url('intercontinental.jpg');"></div>
+  <div class="photo-split-content">
+    <span class="overline" style="color:var(--brass-light);">Partner with TRC</span>
+    <h2>Let's Talk</h2>
+    <span class="rule" style="background:var(--brass);"></span>
+    <p>Whether you are an institutional investor, a high-net-worth individual, or a prospective tenant, we welcome the conversation. Our team is based in Houston and actively engaged with every asset we manage.</p>
+    <div class="btn-row" style="margin-top:2rem;">
+      <a href="contact.html" class="btn btn-brass">Contact Us</a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="trc-logo.webp" alt="TRC Capital Partners">
+        <p>A privately held Texas real estate investment firm. Acquisitions. Development. Management.</p>
+        <a href="https://www.linkedin.com/company/trccapitalpartners/" target="_blank" style="font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brass);display:inline-block;margin-top:0.8rem;">LinkedIn</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About TRC</a>
+        <a href="team.html">Our Team</a>
+        <a href="why-texas.html">Why Texas</a>
+        <a href="insights.html">Insights</a>
+      </div>
+      <div class="footer-col">
+        <h4>Portfolio</h4>
+        <a href="portfolio.html">1001 McKinney</a>
+        <a href="portfolio.html">Regions Financial Center</a>
+        <a href="portfolio.html">Galaxy</a>
+        <a href="portfolio.html">Lockwood</a>
+        <a href="portfolio.html">Campanile South</a>
+        <a href="portfolio.html">Fernweh</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:7132661899">713.266.1899</a>
+        <a href="mailto:admin@trccapitalpartners.com">admin@trccapitalpartners.com</a>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2025 TRC Capital Partners, LLC. All rights reserved.</span>
+      <span>1001 McKinney St, Suite 525, Houston, TX 77002</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+
+  // Slideshow
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  let current = 0, timer;
+  function goToSlide(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = n;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    clearInterval(timer);
+    timer = setInterval(() => goToSlide((current+1) % slides.length), 5500);
+  }
+  timer = setInterval(() => goToSlide((current+1) % slides.length), 5500);
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+  document.querySelectorAll('.stat-block,.approach-card,.portfolio-card,.team-card-v2,.reveal').forEach(el => obs.observe(el));
+
+  // Counters
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    let cur = 0; const step = target / (1800/16);
+    const t = setInterval(() => { cur = Math.min(cur+step, target); el.textContent = Math.floor(cur); if(cur>=target) clearInterval(t); }, 16);
+  }
+  const cObs = new IntersectionObserver(e => {
+    e.forEach(x => { if(x.isIntersecting) { animateCounter(x.target); cObs.unobserve(x.target); } });
+  }, {threshold:0.5});
+  document.querySelectorAll('[data-target]').forEach(el => cObs.observe(el));
+</script>
+</body>
+</html>
